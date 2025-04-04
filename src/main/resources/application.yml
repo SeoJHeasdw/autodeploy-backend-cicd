@@ -1,0 +1,54 @@
+# 애플리케이션 이름
+spring:
+  application:
+    name: autodeploy-backend-cicd
+  
+  # 데이터베이스 설정(포스트그레(임의))
+#  datasource:
+#    url: jdbc:postgresql://localhost:5432/autodeploy
+#    username: postgres
+#    password: postgres
+#    driver-class-name: org.postgresql.Driver
+  
+  # JPA 설정
+#  jpa:
+#    hibernate:
+#      ddl-auto: update
+#    show-sql: true
+#    properties:
+#      hibernate:
+#        format_sql: true
+#        dialect: org.hibernate.dialect.PostgreSQLDialect
+  
+  # 로깅 레벨 설정
+#  logging:
+#    level:
+#      org.hibernate.SQL: DEBUG
+#      org.hibernate.type.descriptor.sql.BasicBinder: TRACE
+#      com.autodeploy: DEBUG
+
+# 서버 포트 설정
+server:
+  port: 8080
+
+# Git 설정
+#git:
+#  baseUrl: https://github.com/your-org
+#  sourceRepo: your-service-repo
+#  gitopsRepo: your-gitops-repo
+#  username: ${GIT_USERNAME:}
+#  token: ${GIT_TOKEN:}
+
+# Jenkins 설정
+#jenkins:
+#  url: http://jenkins.example.com
+#  username: ${JENKINS_USERNAME:}
+#  token: ${JENKINS_TOKEN:}
+#  buildJob: your-job-name
+
+# ArgoCD 설정
+#argocd:
+#  url: http://argocd.example.com
+#  username: ${ARGOCD_USERNAME:}
+#  password: ${ARGOCD_PASSWORD:}
+#  application: your-app-name
