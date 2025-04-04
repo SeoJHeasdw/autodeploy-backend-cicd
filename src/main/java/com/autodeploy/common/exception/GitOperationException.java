@@ -1,4 +1,4 @@
-package com.autodeploy.exception;
+package com.autodeploy.common.exception;
 
 public class GitOperationException {
 
