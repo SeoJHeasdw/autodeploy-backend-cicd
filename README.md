@@ -36,15 +36,18 @@ autodeploy-backend-cicd/
 │   │   ├── java/
 │   │   │   └── com/
 │   │   │       └── autodeploy/
-│   │   │           ├── config/         # 설정 클래스
+│   │   │           ├── common
+│   │   │			 	 ├── config/     # 설정 클래스
+│   │   │           └── util/           # 유틸리티 클래스
+│   │   │           ├── exception/      # 예외 처리
 │   │   │           ├── controller/     # REST 컨트롤러
 │   │   │           ├── domain/         # 도메인 모델
 │   │   │           │   ├── entity/     # JPA 엔티티
 │   │   │           │   └── repository/ # 데이터 레포지토리
 │   │   │           ├── dto/            # 요청/응답 데이터 모델
-│   │   │           ├── exception/      # 예외 처리
+
 │   │   │           ├── service/        # 비즈니스 로직
-│   │   │           └── util/           # 유틸리티 클래스
+
 │   │   └── resources/
 │   │       └── application.yml         # 애플리케이션 설정
 │   └── test/                           # 테스트 코드
